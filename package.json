@@ -2,17 +2,15 @@
    "name": "chartjs-example",
    "version": "1.0.0",
    "license": "MIT",
-   "main": "./src/scripts/renderer.js",
+   "main": "renderer.js",
    "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-      "dev": "parcel src/index.html",
-      "build": "parcel build src/index.html",
+      "dev": "parcel portRender/index.html",
+      "build": "parcel build portRender/index.html",
       "start": "electron ."
    },
    "devDependencies": {
-      "parcel": "^2.6.2",
-      "path-browserify": "^1.0.1",
-      "process": "^0.11.10"
+      "parcel": "^2.6.2"
    },
    "dependencies": {
       "@cubejs-client/core": "^0.31.0",
