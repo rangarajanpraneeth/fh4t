@@ -19,8 +19,6 @@ const {
 } = require('./constants/constants')
 
 
-
-// set local time and date
 const prefs = { hour: '2-digit', minute: '2-digit' }
 let dateContainer = document.querySelector('.local__date');
 let timeContainer = document.querySelector('.local__time');
@@ -195,7 +193,7 @@ server.on('listening', () => {
    console.log(`Listening on ${address.address}:${address.port}`);
 });
 
-// display function
+
 const populateRenderer = (data) => {
    if (data.inRace === 0) {
       document.querySelector('.status').classList.remove('green');
